@@ -8,14 +8,14 @@
 * L'assemblage de l'application vous permet de choisir quelle librairies et plugins/modules vous voulez inclure dans l'application.
 * Pour assembler l'application, vous n'avez besoin que du `pom.xml`. Ce fichier peut varier selon ce que vous voulez avoir comme librairies et plugins.
 * Le `pom.xml` dans ce repo contient une vintaine de plugin les plus utilisés
-* pour assembler l'application, `maven` devrait être installée préalablement
+* Pour assembler l'application, `maven` devrait être installée préalablement
 
 Pour assembler une application il suffit de rouler cette command dans le même dossier que `pom.xml`:
 
 `mvn lutece:site-assembly`
 
 Le resultat c'est un dossier `target` qui contient l'application sous 2 formes :
-* site-forms-demo-1.0.0-20210425.105408.war : version compressée de l'application (ne sera pas utilisée)
+* site-forms-demo-1.0.0-20210425.105408.war : version compressée de l'application (ne sera pas utilisée dans ce demo)
 * site-forms-demo-1.0.0-SNAPSHOT : version non compréssée. C'est cette version qu'on va utiliser lors du déploiment puisque ça nous permet de changer quelques parametres de base de données
 
 # Ajouter un plugin
