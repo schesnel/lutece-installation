@@ -51,7 +51,7 @@ Les étapes du déploiment:
 
 1. `cd {dossier tomcat}/bin && ./shutdown.sh` (Assurez-vous que Tomcat est arrêté)
 1. `unzip site-forms-demo-1.0.0-SNAPSHOT.zip -d site-forms-demo-1.0.0-SNAPSHOT` (Dézipper le fichier qui est dans ce repo et bien utiliser le dossier qui est dans target assemblé)
-2. `sed -i 's/root/admin/' site-forms-demo-1.0.0-SNAPSHOT/WEB-INF/conf/db.properties` (Changer l'utilisateurde root à admin)
+2. `sed -i 's/root/admin/' site-forms-demo-1.0.0-SNAPSHOT/WEB-INF/conf/db.properties` (Changer l'utilisateur de root à admin)
 3. `cp -r site-forms-demo-1.0.0-SNAPSHOT {dossier tomcat}/webapp/lutece` (copier l'application vers le dossier webapp de tomcat)
 4. `mysql -uroot -e "CREATE USER 'admin'@'%' IDENTIFIED BY 'motdepasse'; GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%';CREATE DATABASE lutece;"` 
 (créer l'utilisateur admin et la bd lutece. Ici on prend pour acquis que votre utilisateur `root` de MySQL n'a pas de mot de passe)
